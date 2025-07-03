@@ -1,11 +1,14 @@
 {
   "name": "svg-preview-context-menu",
   "displayName": "SVG Preview Context Menu",
-  "description": "Добавляет пункт 'Open SVG Preview' в контекстное меню для SVG и папок",
-  "version": "0.0.1",
+  "description": "Preview SVG files and folders with a beautiful gallery and context menu in VS Code.",
+  "version": "1.0.0",
+  "publisher": "AleksandrSukhoparov",
   "engines": {
     "vscode": "^1.70.0"
   },
+  "icon": "icon.png",
+  "categories": ["Other", "Visualization"],
   "activationEvents": [
     "onCommand:svgPreview.open"
   ],
@@ -32,5 +35,15 @@
       ]
     }
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sukhoparovas/svg-preview-vscode"
+  },
+  "bugs": {
+    "url": "https://github.com/sukhoparovas/svg-preview-vscode/issues"
+  },
+  "homepage": "https://github.com/sukhoparovas/svg-preview-vscode#readme",
+  "keywords": ["svg", "preview", "context menu", "gallery"],
+  "license": "MIT",
   "dependencies": {}
 } 
