@@ -1,0 +1,36 @@
+{
+  "name": "svg-preview-context-menu",
+  "displayName": "SVG Preview Context Menu",
+  "description": "Добавляет пункт 'Open SVG Preview' в контекстное меню для SVG и папок",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.70.0"
+  },
+  "activationEvents": [
+    "onCommand:svgPreview.open"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "svgPreview.open",
+        "title": "Open SVG Preview"
+      }
+    ],
+    "menus": {
+      "explorer/context": [
+        {
+          "command": "svgPreview.open",
+          "when": "resourceExtname == .svg",
+          "group": "navigation"
+        },
+        {
+          "command": "svgPreview.open",
+          "when": "explorerResourceIsFolder",
+          "group": "navigation"
+        }
+      ]
+    }
+  },
+  "dependencies": {}
+} 
